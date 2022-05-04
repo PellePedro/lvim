@@ -12,3 +12,9 @@
     
   ```
 </details>
+<details>
+  <summary>vim better whitespace</summary>
+  ```
+  Shows trailing whitespace and removes on save
+  ```
+</details>
