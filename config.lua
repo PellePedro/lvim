@@ -22,11 +22,11 @@ vim.opt.linebreak = true
 vim.opt.list = false
 lvim.builtin.dap.active = true
 lvim.builtin.bufferline.active = true
+lvim.builtin.telescope.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.bufferline.active = true
 lvim.builtin.gitsigns.active = true
 lvim.lsp.default_keybinds = true
-
 lvim.builtin.treesitter.ensure_installed =  {"bash", "go" ,"lua", "python", "javascript", "rust"}
 lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.treesitter.highlight.additional_vim_regex_highlighting = false
@@ -45,6 +45,8 @@ require("user.plugins").setup()
 -- =========================================
 
 require("user.keybindings").setup()
+require('user.telescope_delete_buffers').setup()
+
 
 -- Whichkey
   lvim.builtin.which_key.mappings["m"] = {

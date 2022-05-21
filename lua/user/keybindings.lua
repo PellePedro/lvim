@@ -29,6 +29,8 @@ lvim.keys.normal_mode["mk"] = "<cmd>BookmarkPrev<cr>"
 
   -- '\'  mapping
   vim.api.nvim_set_keymap('n', '\\1',  [[<cmd>:SymbolsOutline<CR>]], { noremap = true, silent = true })
+  vim.api.nvim_set_keymap('n', '\\2',  [[<cmd>:Telescope buffers<CR>]], { noremap = true, silent = true })
+  vim.api.nvim_set_keymap('n', '\\3',  [[<cmd>:LazyGit<CR>]], { noremap = true, silent = true })
   vim.api.nvim_set_keymap('n', '\\w',  [[<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.expand("<cword>") })<CR>]], { noremap = true, silent = true })
   vim.api.nvim_set_keymap('n', '\\s',  [[<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>]], { noremap = true, silent = true })
   vim.api.nvim_set_keymap('n', '\\r',  [[<cmd>lua vim.lsp.buf.rename()<CR>]], { noremap = true, silent = true })
