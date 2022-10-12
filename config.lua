@@ -18,6 +18,7 @@ require "user.whichkey"
 require "user.options"
 require "user.telescope"
 require "user.aerial"
+require("user.neogit")
 
 lvim.format_on_save = true
 lvim.lsp.diagnostics.virtual_text = false

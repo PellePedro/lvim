@@ -20,6 +20,8 @@ lvim.plugins = {
   },
   "ruifm/gitlinker.nvim",
   "mattn/vim-gist",
+  "TimUntersberger/neogit",
+  "sindrets/diffview.nvim",
   "mattn/webapi-vim",
   "folke/zen-mode.nvim",
   "lvimuser/lsp-inlayhints.nvim",

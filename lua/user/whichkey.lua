@@ -44,7 +44,8 @@ lvim.builtin.which_key.mappings["f"] = {
 }
 lvim.builtin.which_key.mappings["g"] = {
   name = "Git",
-  g = { "<cmd>lua require 'lvim.core.terminal'.lazygit_toggle(12000)<cr>", "Lazygit" },
+  g = { "<cmd>Neogit<cr>", "Neogit" },
+  -- g = { "<cmd>lua require 'lvim.core.terminal'.lazygit_toggle(12000)<cr>", "Lazygit" },
   j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
   k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
   l = { "<cmd>GitBlameToggle<cr>", "Blame" },
@@ -56,6 +57,7 @@ lvim.builtin.which_key.mappings["g"] = {
     "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
     "Undo Stage Hunk",
   },
+  n = { ":!git checkout -b ", "Checkout New Branch" },
   o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
   b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
   c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
