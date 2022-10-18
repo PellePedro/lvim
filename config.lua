@@ -120,6 +120,7 @@ lvim.builtin.which_key.mappings["dT"] = { "<cmd>lua require('dap-go').debug_test
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
   { command = "codespell", filetypes = { "go" }, },
+  { command = "staticcheck", filetypes = { "go" }, },
 }
 ------------------------
 -- Formatting

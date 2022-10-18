@@ -89,6 +89,7 @@ keymap("v", "\\y", [[<cmd>:OSCYank<CR>]], opts)
 keymap("n", "\\t", [[<cmd>:TroubleToggle<CR>]], opts)
 
 keymap("n", "\\f", [[<cmd>:set foldmethod=indent<CR>]], opts)
+keymap("n", "\\g", [[<cmd>:Neogit<CR>]], opts)
 keymap("n", "\\b", [[<cmd>:GoBreakToggle<CR>]], opts)
 keymap("n", "\\d", [[<cmd>:GoDebug<CR>]], opts)
 keymap("n", "\\x", [[<cmd>:GoDbgStop<CR>]], opts)
