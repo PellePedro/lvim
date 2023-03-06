@@ -28,6 +28,7 @@ lvim.plugins = {
       vim.g.oscyank_term = "tmux"
     end,
   },
+  -- Git
   {
     "f-person/git-blame.nvim",
     config = function()
@@ -36,6 +37,9 @@ lvim.plugins = {
       vim.g.gitblame_highlight_group = "LineNr"
     end,
   },
+  "TimUntersberger/neogit",
+  "sindrets/diffview.nvim",
+  --
   { "kevinhwang91/nvim-bqf" },
   "leoluz/nvim-dap-go",
   { "olexsmir/gopher.nvim" },
