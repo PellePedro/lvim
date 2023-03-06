@@ -14,10 +14,6 @@ lvim.plugins = {
   "folke/todo-comments.nvim",
   "windwp/nvim-spectre",
   "is0n/jaq-nvim",
-  {
-    "0x100101/lab.nvim",
-    run = "cd js && npm ci",
-  },
   "ruifm/gitlinker.nvim",
   "mattn/vim-gist",
   "TimUntersberger/neogit",
@@ -55,8 +51,8 @@ lvim.plugins = {
   { "simrat39/rust-tools.nvim" },
   {
     "saecki/crates.nvim",
-    tag = "v0.3.0",
-    requires = { "nvim-lua/plenary.nvim" },
+    version = "v0.3.0",
+    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("crates").setup {
         null_ls = {
@@ -69,16 +65,15 @@ lvim.plugins = {
   --
   {
     "RishabhRD/nvim-cheat.sh",
-    requires = "RishabhRD/popfix",
+    dependencies = "RishabhRD/popfix",
     config = function()
       vim.g.cheat_default_window_layout = "vertical_split"
     end,
-    opt = true,
+    lazy = true,
     cmd = { "Cheat", "CheatWithoutComments", "CheatList", "CheatListWithoutComments" },
     keys = "<leader>?",
     -- disable = not lvim.builtin.cheat.active,
   },
-  { "tzachar/cmp-tabnine", run = "./install.sh" },
   {
     "zbirenbaum/copilot.lua",
     -- event = { "VimEnter" },
